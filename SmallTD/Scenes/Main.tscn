@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://chcfnut87u8kh"]
+
+[ext_resource type="Script" path="res://Scenes/Main.gd" id="1_2g1xp"]
+[ext_resource type="Texture2D" uid="uid://crvs76pxgpjul" path="res://Assets/grass.jpg" id="1_tfim5"]
+[ext_resource type="PackedScene" uid="uid://cnslvcho7alxe" path="res://Scenes/Player.tscn" id="2_0ajdc"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_2g1xp")
+
+[node name="Grass" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(1.6, 1.8)
+texture = ExtResource("1_tfim5")
+
+[node name="Player" parent="." instance=ExtResource("2_0ajdc")]
+position = Vector2(488, 288)
